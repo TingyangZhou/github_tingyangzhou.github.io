@@ -39,21 +39,26 @@ header{
   color:grey;
   font-size: 20px
 }
-.nav-bar.active{
+.nav-bar .active{
   color:black;
 }
+
 a:link{
   text-decoration: none;
 }
-a:visited{
-  text-decoration: none;
+
+a:visted{
+  text-decoration:none;
 }
+
 a:hover{
   text-decoration:underline;
 }
+
 a:active{
-  text-decoration: none;
+  text-decoration:none;
 }
+
 footer
 {
   color:white;
@@ -99,22 +104,24 @@ img{
 }
 form{
   display: inline-block;
-  padding-top:10px;
   padding-bottom:10px;
+  background-color: #f1f1f1;
+  font-size:17px;
 }
 
 .userInfo{
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top:10px;
 }
-
 .userInfo td, th{
   border: 0;
+  font-size:17px;
 }
 
 .container{
+  margin-top:30px;
   text-align: center;
 }
+
 
 .cats {
   margin-left: auto;
@@ -125,8 +132,26 @@ form{
   background-color: #2471A3;
   font-size:20px;
   color: white;
+  border: solid 2px black;
 
 }
 .cats td{
-  border: none;
+  border: dotted 2px;
   font-size:15px;
+}
+
+.birdTable {
+  padding-top::10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.birdTable th{
+  background-color: #2471A3;
+  font-size:20px;
+  color: white;
+}
+
+.birdTable td{
+  font-size:20px;
+}

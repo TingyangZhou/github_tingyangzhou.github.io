@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Home</title>
+    <link rel="shortcut icon" href="icon.png">
+    <link rel="stylesheet" href="style.css">
+
+    <script>
+        function validate(){
+          var username = document.subscribe.uname.value;
+          var email = document.subscribe.email.value;
+          var animals = document.subscribe.animals.value;
+          if(username==""||email==""||animals=="")
+          {
+            alert("Fill all the fields")
+          }
+          else{
+            alert("Form submitted successfully")
+          }
+        }
+      </script>
+
+  </head>
+  <body>
+    <header>
+
+      <div class="heading">
+        <h1>Welcome to the Animal Kingdom</h1>
+      </div>
+      <ul class="nav-bar">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="Dogs.html">Dogs</a></li>
+        <li><a href="Birds.html">Birds</a></li>
+        <li><a href="Cats.html">Cats</a></li>
+      </ul>
+    </header>
+    <div>
+      <p><b>
+        We love animals and in this website you will find information about Dogs, Cats and Birds.<br/>
+      </p>
+    </div>
+
+      <table style="width:90%" class = "animals">
+        <tr>
+          <th style="width:33.3%";><a href="Dogs.html" style="color: white;">Dogs</a></th>
+          <th style="width:33.3%"><a href="Birds.html" style="color: white;">Birds</a></th>
+          <th style="width:33.3%"><a href="Cats.html" style="color: white;">Cats</a> </th>
+        </tr>
+        <tr>
+          <td style="word-wrap;"><i><a href="Dogs.html">Dogs</a> are the most popular and diverse pets in the world, with over 150 breeds</td>
+          <td style="word-wrap;"><i><a href="Birds.html">Birds</a> are the only animals with feathers,which help them fly, regulate temperature,and attract mates</td>
+          <td style="word-wrap"> <i><a href="Cats.html">Cats</a> are some of the cutest little animals to exist. But the bigger version of cats are known to be the rulers of the jungle</td>
+        </tr>
+        <tr>
+          <td><img src="dogs.png" width = "200" height = "130"></td>
+          <td><img src="birds.jpg" width = "200" height = "130"></td>
+          <td><img src="cats.png" width = "200" height = "130"></td>
+        </tr>
+      </table>
+
+      <div class="container">
+        <form name="subscribe">
+           <fieldset>
+             <legend>Subscribe to Our Animal Newsletter</legend>
+           <table class="userInfo">
+           <tr>
+             <td align="right"><label>Username:</label></td>
+             <td><input type="text" name="uname"><br/></td>
+           </tr>
+           <tr>
+             <td><label>Email:</label></td>
+             <td><input type="text" name="email"></td>
+           </tr>
+           <tr>
+             <td><label>Animals:</label></td>
+             <td><input type="text" name="animals"></td>
+           </tr>
+           <tr>
+             <td colspan="2" align="center"><input type="button" value="Subscribe" onclick="validate();"></td>
+           </tr>
+           </table>
+         </fieldset>
+         </form>
+      </div>
+
+
+    <footer>
+        Copyright &copy; created by: Tingyang Zhou & Sergio Mendoza
+    </footer/>
+  </body>
+</html>
